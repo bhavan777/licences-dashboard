@@ -1,3 +1,15 @@
+# Instructions to Run this App
+
+
+1. yarn build
+2. yarn preview
+3. the app should be available on http://localhost:4173/
+
+
+
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
