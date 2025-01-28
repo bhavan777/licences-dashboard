@@ -1,9 +1,35 @@
 # Instructions to Run this App
 
 
-1. yarn build
-2. yarn preview
-3. the app should be available on http://localhost:4173/
+1. Clone this Repo
+2. yarn build at root
+3. yarn preview at root
+4. the app should be available on http://localhost:4173/
+
+
+Couple of Assumptions and decisions:
+1. the backend is mocked by using MSW
+2. No encryption is perform on the client, but a dummy file is responded in the api by MSW
+3. a list of licences are assumed on load for the page to show some cards., these licences are in memory, they will be updated as long as the page is not refreshed.
+
+
+Features:
+1. Licence Creation - 
+   a. a licence has
+          licence_type: [TIME_BOUND|USAGE_LIMIT|HARDWARE] and an identified 
+          id: Identifier
+          expiration?: [DATETIME] expiration time of licence
+          usage_limit?: [USAGE_LIMIT] #deployments
+          hardware_id?: [HARDWARE] hardware id or mac address related to the hardware
+   b. Licence display: the Licences are listed down as cards - each card is rendered differently based on licence_type
+   c. Generate secure Link of each licence in a modal by sending licence id to backend which in turn responds with a dummy url which can be opened in new tab or copied
+   d. licence can be copied from the card it self if needed
+
+2. Generate Encrypted file:
+   Assumed to be a standalone feature which just encrypts file bsaed on the file selected [only jpg allowed currently] and passed licence key which in return show generated file to download - ability to generate a secure link for it on demand.
+3. Generate secure link:
+  Secure link can be generated for licences or generated encrypted file.
+
 
 
 
