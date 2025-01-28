@@ -10,14 +10,11 @@ Tech used:
 
 
 Steps to run the app locally
-```
 1. Clone this Repo
 2. `yarn install` at root - installs all dependancies using yarn - make sure you have `yarn` available in your system
 3. `yarn build` at root - builds a local build of the app 
 4. `yarn preview` at root - serves a preview of the app in local port to play around with.,
 5. the app should be available on http://localhost:4173/
-
-```
 
 
 Couple of Assumptions and decisions:
