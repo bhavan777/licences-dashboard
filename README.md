@@ -19,13 +19,14 @@ Features:
 1. Licence Creation - 
    a licence has
       ```
-      {
+       {
            licence_type: [TIME_BOUND|USAGE_LIMIT|HARDWARE] and an identified 
            id: Identifier
            expiration?: [DATETIME] expiration time of licence
            usage_limit?: [USAGE_LIMIT] #deployments
            hardware_id?: [HARDWARE] hardware id or mac address related to the hardware
        }
+      
       ```
   
    b. Licence display: the Licences are listed down as cards - each card is rendered differently based on licence_type
