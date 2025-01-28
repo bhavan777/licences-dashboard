@@ -18,18 +18,20 @@ Couple of Assumptions and decisions:
 Features:
 1. Licence Creation - 
    a. a licence has
-          licence_type: [TIME_BOUND|USAGE_LIMIT|HARDWARE] and an identified 
-          id: Identifier
-          expiration?: [DATETIME] expiration time of licence
-          usage_limit?: [USAGE_LIMIT] #deployments
-          hardware_id?: [HARDWARE] hardware id or mac address related to the hardware
+      - {
+          - licence_type: [TIME_BOUND|USAGE_LIMIT|HARDWARE] and an identified 
+          - id: Identifier
+          - expiration?: [DATETIME] expiration time of licence
+          - usage_limit?: [USAGE_LIMIT] #deployments
+          - hardware_id?: [HARDWARE] hardware id or mac address related to the hardware
+      - }
    b. Licence display: the Licences are listed down as cards - each card is rendered differently based on licence_type
    c. Generate secure Link of each licence in a modal by sending licence id to backend which in turn responds with a dummy url which can be opened in new tab or copied
    d. licence can be copied from the card it self if needed
 
-2. Generate Encrypted file:
+3. Generate Encrypted file:
    Assumed to be a standalone feature which just encrypts file bsaed on the file selected [only jpg allowed currently] and passed licence key which in return show generated file to download - ability to generate a secure link for it on demand.
-3. Generate secure link:
+4. Generate secure link:
   Secure link can be generated for licences or generated encrypted file.
 
 
