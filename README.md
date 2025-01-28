@@ -1,9 +1,11 @@
 # Instructions to Run this App
 
+Backed in mocked by MSW on client, no backend is needed since we are using service worker is taking care of mocking apis.,
+
 
 1. Clone this Repo
-2. yarn build at root
-3. yarn preview at root
+2. `yarn build` at root
+3. `yarn preview` at root
 4. the app should be available on http://localhost:4173/
 
 
