@@ -18,7 +18,8 @@ Couple of Assumptions and decisions:
 Features:
 1. Licence Creation - 
    a licence has
-      ``` {
+      ```
+      {
            licence_type: [TIME_BOUND|USAGE_LIMIT|HARDWARE] and an identified 
            id: Identifier
            expiration?: [DATETIME] expiration time of licence
